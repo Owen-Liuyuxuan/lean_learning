@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+:root {
+  --art-page: #faf8f3;
+  --art-surface: #fffefa;
+  --art-ink: #23343b;
+  --art-muted: #596c70;
+  --art-accent: #225e4c;
+  --art-accent-hover: #1a493b;
+  --art-tint: #edf4ee;
+  --art-line: #dce2d9;
+  --art-terracotta: #b85d2b;
+  --art-terracotta-tint: #fdf3ed;
+  --art-slate: #182228;
+  --art-slate-2: #202d35;
+  --art-slate-border: #2e3f49;
+  --art-display: "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", Georgia, "Times New Roman", serif;
+  --art-body: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  --art-mono: "JetBrains Mono", "Fira Code", "SFMono-Regular", Consolas, ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--art-page);
+    color: var(--art-ink);
+    font-family: var(--art-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--art-page);
+    color: var(--art-ink);
+    line-height: 1.75;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--art-display);
+    letter-spacing: -0.01em;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--art-mono);
+  }
+}
+
+.katex-display {
+  margin: 1rem 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+
+.katex {
+  font-size: 1.03em;
+}
+
+/* Subtle scrollbar for code/infoview containers */
+.slate-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.slate-scroll::-webkit-scrollbar-track {
+  background: #141d22;
+}
+
+.slate-scroll::-webkit-scrollbar-thumb {
+  background: #334651;
+  border-radius: 3px;
+}

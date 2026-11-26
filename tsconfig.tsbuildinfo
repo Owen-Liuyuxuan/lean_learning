@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/components/ConceptQuiz.tsx","./src/components/CurryHowardExplorer.tsx","./src/components/KernelPipeline.tsx","./src/components/Math.tsx","./src/components/MiniProofSandbox.tsx","./src/components/ProofWorkshop.tsx","./src/components/SidebarNav.tsx","./src/data/curriculum.ts","./src/data/examples.ts"],"version":"5.8.3"}
